@@ -45,7 +45,8 @@ class LinkedList {
       index++;
     }
     srt += "null";
-    console.log(srt);
+//    console.log(srt);
+    return srt
   }
 
   forEach(callBack) {
@@ -117,26 +118,3 @@ class LinkedList {
     return head;
   }
 }
-
-const n1 = Node("value1");
-const n2 = Node("value2");
-const n3 = Node("value3");
-const n4 = Node("value4");
-
-const n0 = Node("value0");
-// n1.value = "value2";
-// console.log(n1);
-const l1 = new LinkedList();
-l1.append(n1);
-l1.append(n2);
-l1.append(n3);
-l1.append(n4);
-l1.prepend(n0);
-// l1.print();
-// l1.forEach((node) => console.log(node.value));
-// console.table(l1);
-l1.size();
-console.log(l1.head());
-console.log(l1.tail());
-console.log(`at ${l1.at(2)} not at ${l1.at(9)}`);
-console.log(`true: ${l1.contains('value1')} false: ${l1.contains('here')}`)
